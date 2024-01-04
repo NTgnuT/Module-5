@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package com.ra.service;
 
 import com.ra.model.dto.reponse.CategoryResponse;
@@ -18,3 +19,17 @@ public interface CategoryService {
 
     Page<CategoryResponse> searchByName (Pageable pageable, String name);
 }
+=======
+package com.ra.service;
+
+import com.ra.model.entity.Category;
+
+import java.util.List;
+
+public interface CategoryService {
+    List<Category> findAll();
+    Category saveOrUpdate(Category category);
+    Category findById (Long id);
+    void delete(Long id);
+}
+>>>>>>> 1c065e15f1a3b41e68f9fa4d7be2ce15a25a2b7e
